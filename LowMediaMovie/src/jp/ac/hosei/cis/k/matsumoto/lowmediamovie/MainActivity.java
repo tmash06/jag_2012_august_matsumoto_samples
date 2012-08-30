@@ -200,7 +200,7 @@ public class MainActivity extends Activity {
 							colorConvert(argb8888framebuffer, framebuffer,
 									width, height);
 
-							
+
 							bitmap.setPixels(argb8888framebuffer, 0, width, 0, 0, width, height);
 
 							codec.releaseOutputBuffer(outputBufIndex, false);
@@ -290,7 +290,7 @@ public class MainActivity extends Activity {
 		return ret.toString();
 	}
 
-	
+
 	class BitmapSurfaceView extends SurfaceView implements
 			SurfaceHolder.Callback {
 
@@ -348,9 +348,6 @@ public class MainActivity extends Activity {
 						ViewGroup.LayoutParams.MATCH_PARENT,
 						ViewGroup.LayoutParams.WRAP_CONTENT));
 
-		((EditText) findViewById(R.id.mediaPathEditText))
-				.setText("/sdcard/bake_15.mp4");
-		//
 		((Button) findViewById(R.id.analyzeAndPlayButton))
 				.setOnClickListener(new OnClickListener() {
 

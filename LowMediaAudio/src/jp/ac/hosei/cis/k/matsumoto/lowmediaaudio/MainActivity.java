@@ -184,7 +184,7 @@ public class MainActivity extends Activity {
 								channelConfig = AudioFormat.CHANNEL_OUT_STEREO;
 							else
 								throw new RuntimeException(
-										"Unrecoganized channel number.");
+										"Unrecognized channel number.");
 
 							// Žæ“¾‚·‚é•û–@‚ªŒ©‚Â‚©‚ç‚È‚©‚Á‚½‚Ì‚ÅŒˆ‚ß‘Å‚¿
 							final int audioFormat = AudioFormat.ENCODING_PCM_16BIT;
@@ -286,10 +286,7 @@ public class MainActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		//
-		((EditText) findViewById(R.id.mediaPathEditText))
-				.setText("/sdcard/lion.mp3");
-		//
+
 		((Button) findViewById(R.id.analyzeAndPlayButton))
 				.setOnClickListener(new OnClickListener() {
 
